@@ -51,9 +51,9 @@
             color: rgb(149, 149, 206);
         }
 
-        main hr{
+        main hr {
             border: 0;
-            background-color:  rgb(154, 90, 214);
+            background-color: rgb(154, 90, 214);
             height: 1.2px;
             margin: 40px 85px;
         }
@@ -77,10 +77,12 @@
             font-size: 2rem;
 
         }
-        .leftSection .buttons{
+
+        .leftSection .buttons {
             padding: 20px 0;
         }
-        .leftSection .btn{
+
+        .leftSection .btn {
             padding: 12px;
             background-color: rgb(9, 9, 88);
             color: white;
@@ -89,8 +91,9 @@
             font-size: 12px;
             cursor: pointer;
         }
-        .leftSection .btn:hover{
-            background-color:  rgb(154, 90, 214);
+
+        .leftSection .btn:hover {
+            background-color: rgb(154, 90, 214);
         }
 
         .rightSection img {
@@ -101,72 +104,145 @@
         .purple {
             color: rgb(154, 90, 214);
         }
-        .text-gray{
+
+        .text-gray {
             color: gray;
         }
 
         #element {
             color: rgb(154, 90, 214);
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
             height: 80vh;
         }
-        .secondSection h1{
+
+        .secondSection h1 {
             font-size: 1.9rem;
         }
-        .secondSection .box{
+
+        .secondSection .box {
             background: white;
             width: 80vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
         }
-        .secondSection .vertical{
+
+        .secondSection .vertical {
             background: white;
             width: 1px;
             height: 93px;
             margin: 0 100px;
         }
-        .image-top{
+
+        .image-top {
             width: 25px;
             position: relative;
             top: -32px;
             left: -9px;
         }
-        .vertical-title{
+
+        .vertical-title {
             position: relative;
             top: 75px;
             width: 150px;
             font-size: 14px;
         }
-        .vertical-desc{
+
+        .vertical-desc {
             position: relative;
             top: 86px;
             color: grey;
             width: 150px;
             font-size: 9px;
         }
-        footer{
+
+        footer {
             background-color: rgb(20, 20, 39);
             height: 200px;
         }
-        .footer{
+
+        .footer {
             display: flex;
             padding: 23px 100px;
             justify-content: space-evenly;
         }
-        .footer ul{
+
+        .footer ul {
             list-style: none;
         }
-        .footer > div{
+
+        .footer>div {
             width: 200px;
         }
-        footer .footer-rights{
+
+        footer .footer-rights {
             text-align: center;
             color: grey;
             padding: 12px 0;
+        }
+
+        /* Media Query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            nav ul li {
+                margin: 0 5px;
+                /* Adjust the margin for smaller screens */
+            }
+
+            main hr {
+                margin: 20px 0;
+            }
+
+            .firstSection {
+                margin: 20px 0;
+            }
+
+            .firstSection>div {
+                width: 100%;
+            }
+
+            .leftSection .btn {
+                font-size: 10px;
+            }
+
+            .secondSection {
+                padding: 20px 5%;
+                /* Adjust the padding for smaller screens */
+            }
+
+            .secondSection h1 {
+                font-size: 1.5rem;
+                /* Adjust the font size for smaller screens */
+            }
+
+            .vertical {
+                width: 100%;
+                /* Make the vertical boxes take up the full width on smaller screens */
+            }
+
+            .image-top {
+                top: 0;
+                left: 0;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                font-size: 12px;
+                /* Adjust the font size for smaller screens */
+            }
+
+            .secondSection .vertical {
+                margin: 0 5%;
+
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -211,29 +287,39 @@
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">HTML Developer (2010-2011)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus molestiae. Fugit voluptates quae possimus eligendi?</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse
+                        molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus
+                        molestiae. Fugit voluptates quae possimus eligendi?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">HTML Developer (2010-2011)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus molestiae. Fugit voluptates quae possimus eligendi?</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse
+                        molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus
+                        molestiae. Fugit voluptates quae possimus eligendi?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">HTML Developer (2010-2011)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus molestiae. Fugit voluptates quae possimus eligendi?</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse
+                        molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus
+                        molestiae. Fugit voluptates quae possimus eligendi?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">HTML Developer (2010-2011)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus molestiae. Fugit voluptates quae possimus eligendi?</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse
+                        molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus
+                        molestiae. Fugit voluptates quae possimus eligendi?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
                     <div class="vertical-title">HTML Developer (2010-2011)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus molestiae. Fugit voluptates quae possimus eligendi?</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae esse
+                        molestias nemo ut accusantium ex eveniet cupiditate ipsam veritatis fuga, tempore facilis natus
+                        molestiae. Fugit voluptates quae possimus eligendi?</div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -266,7 +352,7 @@
                     <li>Home</li>
                 </ul>
             </div>
-            
+
         </div>
         <div class="footer-rights">
             &#169; Prohitsportfolio.com | All rights reserved
