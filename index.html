@@ -11,240 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@200;500;600&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(1, 1, 59);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(0, 0, 77);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(149, 149, 206);
-        }
-
-        main hr {
-            border: 0;
-            background-color: rgb(154, 90, 214);
-            height: 1.2px;
-            margin: 40px 85px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 2rem;
-
-        }
-
-        .leftSection .buttons {
-            padding: 20px 0;
-        }
-
-        .leftSection .btn {
-            padding: 12px;
-            background-color: rgb(9, 9, 88);
-            color: white;
-            border: 2px solid white;
-            border-radius: 12px;
-            font-size: 12px;
-            cursor: pointer;
-        }
-
-        .leftSection .btn:hover {
-            background-color: rgb(154, 90, 214);
-        }
-
-        .rightSection img {
-            width: 80%;
-
-        }
-
-        .purple {
-            color: rgb(154, 90, 214);
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(154, 90, 214);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondSection .vertical {
-            background: white;
-            width: 1px;
-            height: 93px;
-            margin: 0 100px;
-        }
-
-        .image-top {
-            width: 25px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: grey;
-            width: 150px;
-            font-size: 9px;
-        }
-
-        footer {
-            background-color: rgb(20, 20, 39);
-            height: 200px;
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 100px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 200px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: grey;
-            padding: 12px 0;
-        }
-
-        /* Media Query for screens smaller than 600px */
-        @media (max-width: 600px) {
-            nav ul li {
-                margin: 0 5px;
-                /* Adjust the margin for smaller screens */
-            }
-
-            main hr {
-                margin: 20px 0;
-            }
-
-            .firstSection {
-                margin: 20px 0;
-            }
-
-            .firstSection>div {
-                width: 100%;
-            }
-
-            .leftSection .btn {
-                font-size: 10px;
-            }
-
-            .secondSection {
-                padding: 20px 5%;
-                /* Adjust the padding for smaller screens */
-            }
-
-            .secondSection h1 {
-                font-size: 1.5rem;
-                /* Adjust the font size for smaller screens */
-            }
-
-            .vertical {
-                width: 100%;
-                /* Make the vertical boxes take up the full width on smaller screens */
-            }
-
-            .image-top {
-                top: 0;
-                left: 0;
-            }
-
-            .vertical-title,
-            .vertical-desc {
-                font-size: 12px;
-                /* Adjust the font size for smaller screens */
-            }
-
-            .secondSection .vertical {
-                margin: 0 5%;
-
-            }
-
-            .vertical-title,
-            .vertical-desc {
-                font-size: 12px;
-            }
-        }
-    </style>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -253,10 +21,10 @@
             <div class="left">Prohit Bagde</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">About</a></li>
+                    <li><a href="https://www.linkedin.com/in/prohit-bagde-052508241">About</a></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Service</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="form.html">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -270,8 +38,8 @@
                 <!-- Element to contain animated typing -->
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <a href="mycv.pdf" download="mycv.pdf"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Prohit0152"><button class="btn">Visit Github</button></a>
                 </div>
             </div>
 
@@ -331,25 +99,22 @@
             <div class="footer-second">
                 <ul>
                     <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
                 </ul>
             </div>
             <div class="footer-third">
                 <ul>
                     <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
                 </ul>
             </div>
             <div class="footer-fourth">
                 <ul>
                     <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
                 </ul>
             </div>
 
